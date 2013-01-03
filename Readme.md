@@ -3,8 +3,8 @@
 [![Build Status](https://secure.travis-ci.org/Gozala/isoscope.png)](http://travis-ci.org/Gozala/isoscope)
 
 ECMAScript function isolation analyzer. This is project is very **alpha** but
-intention is to provide API for performing static analyzes on the nodes of the
-JS AST in the de facto [syntax tree format][ast]. All the API function take AST
+intention is to provide API for performing static analyzes on the JS AST nodes
+in the de facto [syntax tree format][ast]. All the API function take AST
 nodes denoting a function definition / declaration and perform static analyzes
 on it.
 
