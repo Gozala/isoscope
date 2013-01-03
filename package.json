@@ -1,0 +1,43 @@
+{
+  "name": "isoscope",
+  "id": "isoscope",
+  "version": "0.0.1",
+  "description": "ECMAScript function isolation analyzer",
+  "keywords": [
+    "isoscope"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/isoscope",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/isoscope.git",
+    "web": "https://github.com/Gozala/isoscope"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/isoscope/issues/"
+  },
+  "devDependencies": {
+    "test": "~0.x.0",
+    "phantomify": "~0.x.0",
+    "repl-utils": "~1.0.0",
+    "esprima": "~1.0.2"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "repl": "node node_modules/repl-utils",
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "node ./node_modules/phantomify/bin/cmd.js ./test/common.js",
+    "test-node": "node ./test/common.js",
+    "postinstall": "npm dedup"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Gozala/isoscope/License.md"
+    }
+  ],
+  "dependencies": {
+    "episcope": "0.0.1",
+    "interset": "0.0.1"
+  }
+}
